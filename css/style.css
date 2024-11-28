@@ -1,0 +1,68 @@
+body{
+  box-sizing: border-box;
+  
+}
+body h1{
+    font-family: "Sofia", sans-serif;
+    position: relative;
+    
+  }
+  h1::after{
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 10px;
+    opacity: 55%;
+    background-color: orange;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s all;
+}
+  h1:hover::after{
+    height: 30px;
+  }
+  body{
+    background-color: #f7ECDE;
+  }
+  .py-3{
+    position: relative;
+  }
+  .py-3::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 0.5px;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+  }
+ 
+  @media screen and (min-width:1000px) {
+    .py-3::after{
+      width: 1000px;
+    }
+  }
+
+  @media screen and (min-width:900px) {
+    .py-3::after{
+      width: 800px;
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    .py-3::after{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width:900px) {
+    .py-3::after{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width:400px) {
+    .py-3::after{
+      width: 200px;
+    }
+  }
